@@ -30,7 +30,7 @@ function goToBlock(event) {
   event.preventDefault()
   var id = event.target.href.split('#')[1]
   // window.location.hash = id
-  history.pushState(null, '', '/#'+id)
+  history.pushState(null, '', './#'+id)
   // change bg menu.
   for (let index = 0; index < menulinks.length; index++) {
     menulinks[index].classList.remove('visited')  
